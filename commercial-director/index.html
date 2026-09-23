@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Досвід Артема Бородіна в комерційному управлінні: стратегія продажів, CRM, команда, HoReCa, дистрибуція, канали збуту, маржинальність і масштабування бізнесу.">
+  <title>Артем Бородін — комерційний директор / CCO</title>
+  <style>
+    :root {
+      --ink: #261d20;
+      --muted: #665b5f;
+      --paper: #f4efe9;
+      --surface: #fffaf5;
+      --line: #d9cec7;
+      --green: #5a2636;
+      --green-soft: #eee2e5;
+      --orange: #c46c3f;
+      --max: 1080px;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font-family: Georgia, "Times New Roman", serif;
+      line-height: 1.62;
+    }
+
+    a { color: inherit; }
+
+    .wrap {
+      width: min(var(--max), calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    .hero {
+      padding: 34px 0 70px;
+      background: var(--green);
+      color: #fffdf8;
+    }
+
+    .topline {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 66px;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    .name {
+      font-weight: 700;
+      letter-spacing: .02em;
+    }
+
+    .top-contact {
+      color: rgba(255, 253, 248, .78);
+      text-decoration: none;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 68px;
+      align-items: end;
+    }
+
+    .eyebrow,
+    .kicker {
+      margin: 0 0 18px;
+      color: var(--orange);
+      font: 700 12px/1.3 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h1,
+    h2,
+    h3,
+    p { margin-top: 0; }
+
+    h1 {
+      max-width: 780px;
+      margin-bottom: 24px;
+      font-size: clamp(42px, 6.5vw, 78px);
+      line-height: .98;
+      font-weight: 500;
+      letter-spacing: -.04em;
+    }
+
+    .hero-lead {
+      max-width: 720px;
+      margin-bottom: 0;
+      color: rgba(255, 253, 248, .82);
+      font-size: 21px;
+      line-height: 1.45;
+    }
+
+    .role-note {
+      padding: 24px 0 4px 24px;
+      border-left: 1px solid rgba(255, 253, 248, .35);
+    }
+
+    .role-note strong {
+      display: block;
+      margin-bottom: 10px;
+      font: 700 14px/1.3 Arial, sans-serif;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+
+    .role-note p {
+      margin-bottom: 0;
+      color: rgba(255, 253, 248, .72);
+      font-size: 17px;
+    }
+
+    .proof-strip {
+      margin-top: -30px;
+      position: relative;
+      z-index: 1;
+    }
+
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      background: var(--surface);
+      border: 1px solid var(--line);
+    }
+
+    .proof {
+      min-height: 142px;
+      padding: 25px 24px;
+      border-right: 1px solid var(--line);
+    }
+
+    .proof:last-child { border-right: 0; }
+
+    .proof strong {
+      display: block;
+      margin-bottom: 8px;
+      color: var(--green);
+      font: 700 31px/1 Arial, sans-serif;
+    }
+
+    .proof span {
+      color: var(--muted);
+      font: 14px/1.4 Arial, sans-serif;
+    }
+
+    main { padding: 80px 0 20px; }
+
+    .intro-grid,
+    .case-grid,
+    .closing-grid {
+      display: grid;
+      grid-template-columns: 280px minmax(0, 1fr);
+      gap: 72px;
+    }
+
+    .section-label {
+      position: sticky;
+      top: 24px;
+      align-self: start;
+      padding-top: 8px;
+      color: var(--green);
+      font: 700 12px/1.3 Arial, sans-serif;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      margin-bottom: 22px;
+      font-size: clamp(32px, 4vw, 51px);
+      line-height: 1.05;
+      font-weight: 500;
+      letter-spacing: -.035em;
+    }
+
+    .large-copy {
+      max-width: 730px;
+      color: #36423a;
+      font-size: 22px;
+      line-height: 1.5;
+    }
+
+    .fit-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-top: 42px;
+      border-top: 1px solid var(--line);
+      border-left: 1px solid var(--line);
+    }
+
+    .fit-item {
+      min-height: 180px;
+      padding: 26px;
+      border-right: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .fit-number {
+      display: block;
+      margin-bottom: 28px;
+      color: var(--orange);
+      font: 700 12px/1 Arial, sans-serif;
+    }
+
+    .fit-item h3 {
+      margin-bottom: 8px;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.15;
+    }
+
+    .fit-item p {
+      margin-bottom: 0;
+      color: var(--muted);
+      font: 15px/1.55 Arial, sans-serif;
+    }
+
+    .cases { padding: 105px 0 20px; }
+
+    .case {
+      padding: 48px 0 54px;
+      border-top: 1px solid var(--line);
+    }
+
+    .case:first-child { border-top: 0; padding-top: 0; }
+
+    .case-company {
+      margin-bottom: 14px;
+      color: var(--orange);
+      font: 700 12px/1.3 Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    .case h3 {
+      max-width: 760px;
+      margin-bottom: 20px;
+      font-size: clamp(27px, 3.2vw, 40px);
+      line-height: 1.08;
+      font-weight: 500;
+      letter-spacing: -.025em;
+    }
+
+    .case-summary {
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .case-columns {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 46px;
+      margin-top: 30px;
+    }
+
+    .case-columns h4 {
+      margin: 0 0 12px;
+      color: var(--green);
+      font: 700 12px/1.3 Arial, sans-serif;
+      letter-spacing: .1em;
+      text-transform: uppercase;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 19px;
+      color: #354039;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .outcomes {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 28px;
+    }
+
+    .outcome {
+      padding: 9px 12px;
+      background: var(--green-soft);
+      color: var(--green);
+      font: 700 13px/1.3 Arial, sans-serif;
+    }
+
+    .honesty {
+      margin-top: 90px;
+      padding: 45px 0;
+      border-top: 1px solid var(--line);
+      border-bottom: 1px solid var(--line);
+    }
+
+    .honesty p {
+      max-width: 760px;
+      margin-bottom: 0;
+      color: #36423a;
+      font-size: 20px;
+    }
+
+    .closing {
+      padding: 90px 0 100px;
+    }
+
+    .closing h2 { max-width: 690px; }
+
+    .closing p {
+      max-width: 650px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 12px 18px;
+      border: 1px solid var(--green);
+      color: var(--green);
+      font: 700 14px/1.2 Arial, sans-serif;
+      text-decoration: none;
+      transition: background .18s ease, color .18s ease;
+    }
+
+    .button.primary,
+    .button:hover,
+    .button:focus-visible {
+      background: var(--green);
+      color: #fff;
+    }
+
+    .button:focus-visible {
+      outline: 3px solid rgba(215, 101, 54, .45);
+      outline-offset: 3px;
+    }
+
+    footer {
+      padding: 24px 0 34px;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font: 13px/1.5 Arial, sans-serif;
+    }
+
+    @media (max-width: 820px) {
+      .hero { padding-bottom: 58px; }
+      .topline { padding-bottom: 44px; }
+      .hero-grid,
+      .intro-grid,
+      .case-grid,
+      .closing-grid { grid-template-columns: 1fr; gap: 28px; }
+      .role-note { padding: 22px 0 0; border-left: 0; border-top: 1px solid rgba(255, 253, 248, .35); }
+      .proof-grid { grid-template-columns: 1fr 1fr; }
+      .proof:nth-child(2) { border-right: 0; }
+      .proof:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+      .section-label { position: static; }
+      main { padding-top: 65px; }
+      .cases { padding-top: 78px; }
+    }
+
+    @media (max-width: 560px) {
+      .wrap { width: min(var(--max), calc(100% - 28px)); }
+      .topline { align-items: flex-start; flex-direction: column; gap: 8px; }
+      h1 { font-size: 43px; }
+      .hero-lead { font-size: 18px; }
+      .proof-grid,
+      .fit-list,
+      .case-columns { grid-template-columns: 1fr; }
+      .proof { min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
+      .proof:last-child { border-bottom: 0; }
+      .fit-item { min-height: 0; }
+      .case { padding: 40px 0 44px; }
+      .honesty { margin-top: 62px; }
+      .closing { padding: 68px 0 72px; }
+      .actions { flex-direction: column; }
+      .button { justify-content: center; width: 100%; }
+    }
+
+    @media print {
+      body { background: #fff; }
+      .hero { background: #fff; color: #000; padding-bottom: 35px; }
+      .hero-lead, .role-note p, .top-contact { color: #333; }
+      .role-note { border-color: #aaa; }
+      .proof-strip { margin-top: 0; }
+      .section-label { position: static; }
+      .button { color: #000; border-color: #000; }
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="wrap">
+      <div class="topline">
+        <span class="name">Артем Бородін</span>
+        <a class="top-contact" href="mailto:borodin837@gmail.com">borodin837@gmail.com · +38 (067) 214-55-65</a>
+      </div>
+      <div class="hero-grid">
+        <div>
+          <p class="eyebrow">Комерційний директор · CCO · розвиток бізнесу</p>
+          <h1>Перетворюю комерційні цілі на систему зростання</h1>
+          <p class="hero-lead">Поєдную стратегію продажів, CRM, маркетингові канали, команду та комерційну економіку. Будую модель, у якій залучення клієнтів, виконання планів і масштабування стають керованими та прогнозованими.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="proof-strip">
+    <div class="wrap proof-grid" aria-label="Ключові результати">
+      <div class="proof"><strong>2,5×</strong><span>зростання продажів у HoReCa Group Україна</span></div>
+      <div class="proof"><strong>1,5×</strong><span>зростання кількості контрагентів</span></div>
+      <div class="proof"><strong>$370 тис. → $3,5 млн</strong><span>зростання річних продажів</span></div>
+      <div class="proof"><strong>14% → 33%</strong><span>зростання частки регіонального ринку</span></div>
+    </div>
+  </div>
+
+  <main>
+    <section class="wrap intro-grid" aria-labelledby="system-title">
+      <div class="section-label">Комерційна система</div>
+      <div>
+        <h2 id="system-title">Від окремих активностей — до керованого комерційного циклу</h2>
+        <p class="large-copy">Моя задача як CCO — поєднати позиціонування, залучення клієнтів, роботу менеджерів, воронку, канали збуту та фінансові показники. Команда має розуміти не лише план продажів, а й конкретні дії, нормативи та економіку результату.</p>
+
+        <div class="fit-list">
+          <article class="fit-item">
+            <span class="fit-number">01</span>
+            <h3>Стратегія та канали</h3>
+            <p>Сегменти клієнтів, HoReCa, B2B, дистрибуція, партнери, електронна комерція та регіональний розвиток.</p>
+          </article>
+          <article class="fit-item">
+            <span class="fit-number">02</span>
+            <h3>CRM і воронка</h3>
+            <p>Етапи продажу, нормативи активності, прогноз, конверсія та регулярна управлінська аналітика.</p>
+          </article>
+          <article class="fit-item">
+            <span class="fit-number">03</span>
+            <h3>Команда та виконання</h3>
+            <p>Структура відділу, ролі, KPI, мотивація, розвиток керівників і контроль виконання планів.</p>
+          </article>
+          <article class="fit-item">
+            <span class="fit-number">04</span>
+            <h3>Комерційна економіка</h3>
+            <p>P&amp;L, маржинальність, ціноутворення, запаси, дебіторська заборгованість і грошові потоки.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap cases" aria-labelledby="cases-title">
+      <div class="case-grid">
+        <div class="section-label">Кейси</div>
+        <div>
+          <h2 id="cases-title">Як будував комерційне зростання</h2>
+
+          <article class="case">
+            <p class="case-company">01 · HoReCa Group Україна · комерційний директор</p>
+            <h3>Масштабування продажів і клієнтської бази через стратегію, KPI та нові канали</h3>
+            <p class="case-summary">У компанії з 50–70 співробітниками потрібно було створити основу для масштабування, посилити регіональне покриття й утримати керованість комерційної системи.</p>
+            <div class="case-columns">
+              <div>
+                <h4>Що зробив</h4>
+                <ul>
+                  <li>Сформував збутову та маркетингову стратегію.</li>
+                  <li>Впровадив KPI, бізнес-процеси та регулярний контроль виконання планів.</li>
+                  <li>Розвинув альтернативні канали продажів.</li>
+                  <li>Створив регіональні підрозділи в Житомирі та Чернігові.</li>
+                  <li>Формував і розвивав команду керівників та менеджерів.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="outcomes" aria-label="Результати кейсу HoReCa Group Україна">
+              <span class="outcome">Продажі зросли у 2,5 раза</span>
+              <span class="outcome">Контрагентів стало у 1,5 раза більше</span>
+              <span class="outcome">Відкрито 2 регіональні підрозділи</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <p class="case-company">02 · Global Foods Distribution · регіональний директор</p>
+            <h3>Розвиток дистрибуції, частки ринку та регіональної мережі</h3>
+            <p class="case-summary">Відповідав за комерційне зростання у східному регіоні, побудову мережі підрозділів, автоматизацію продажів і контроль фінансових показників.</p>
+            <div class="case-columns">
+              <div>
+                <h4>Що зробив</h4>
+                <ul>
+                  <li>Розвивав продажі та дистрибуцію в регіоні.</li>
+                  <li>Побудував мережу регіональних підрозділів і відділів продажів.</li>
+                  <li>Автоматизував продажі та управлінський контроль.</li>
+                  <li>Організував складський і адміністративний облік.</li>
+                  <li>Контролював плани продажів і грошові потоки.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="outcomes" aria-label="Результати роботи в Global Foods Distribution">
+              <span class="outcome">Продажі: $370 тис. → $3,5 млн</span>
+              <span class="outcome">Частка ринку: 14% → 33%</span>
+              <span class="outcome">Побудована регіональна мережа</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <p class="case-company">03 · Ювелірний дім SOVA · оборотність і товарна матриця</p>
+            <h3>Зростання обігу партнерів через KPI, товарну матрицю та роботу команди</h3>
+            <p class="case-summary">Під час спаду попиту потрібно було посилити B2B-напрямок, прискорити рух товару в партнерських точках і зменшити тиск неліквідних залишків на оборотні кошти.</p>
+            <div class="case-columns">
+              <div>
+                <h4>Що зробив</h4>
+                <ul>
+                  <li>Керував командою з восьми регіональних директорів.</li>
+                  <li>Провів зустрічі з ключовими клієнтами та визначив причини слабкого обігу.</li>
+                  <li>Змінив критерій управління з валового обсягу на ліквідність і швидкість ротації.</li>
+                  <li>Узгодив KPI продажів і категорійного управління.</li>
+                  <li>Перерозподілив території відповідно до сильних сторін керівників.</li>
+                  <li>Запустив мотиваційні програми для працівників партнерських точок.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="outcomes" aria-label="Результати кейсу SOVA">
+              <span class="outcome">8 регіональних директорів у команді</span>
+              <span class="outcome">Обіг у клієнтів +15–25%</span>
+              <span class="outcome">Запуск новинок у 2–3 рази швидше</span>
+              <span class="outcome">Частка неліквідів почала знижуватися</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <p class="case-company">04 · AgroPlan · B2B, B2C та комерційна економіка</p>
+            <h3>Розведення каналів продажів, ціноутворення та контроль прибутковості</h3>
+            <p class="case-summary">Швидке зростання створило конкуренцію між B2B-дилерами та B2C-напрямком за ціною й клієнта, а операційна система не встигала за темпом продажів.</p>
+            <div class="case-columns">
+              <div>
+                <h4>Що зробив</h4>
+                <ul>
+                  <li>Розділив правила, пріоритети й обмеження для B2B та B2C.</li>
+                  <li>Впорядкував ціноутворення між каналами.</li>
+                  <li>Синхронізував продажі, маркетинг, закупівлі, склад і операції.</li>
+                  <li>Посилив контроль обробки звернень і навантаження команди.</li>
+                  <li>Використовував P&amp;L і cash flow для комерційних та бюджетних рішень.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="outcomes" aria-label="Результати кейсу AgroPlan">
+              <span class="outcome">Керовані правила B2B і B2C</span>
+              <span class="outcome">Узгоджене ціноутворення</span>
+              <span class="outcome">P&amp;L і cash flow у рішеннях</span>
+            </div>
+          </article>
+
+          <article class="case">
+            <p class="case-company">05 · Різні бізнеси · 2017–теперішній час</p>
+            <h3>Перебудова комерційної моделі та розвиток цифрових каналів</h3>
+            <p class="case-summary">У проєктних і штатних ролях працював із компаніями, яким потрібно було структурувати продажі, з’єднати комерційні та фінансові показники й розширити канали залучення клієнтів.</p>
+            <div class="case-columns">
+              <div>
+                <h4>Що робив</h4>
+                <ul>
+                  <li>Будував і перебудовував B2B, партнерські та e-commerce канали.</li>
+                  <li>Впроваджував CRM, воронку, KPI, прогнозування та управлінську аналітику.</li>
+                  <li>Узгоджував продажі, маркетинг, операції та фінанси.</li>
+                  <li>Оптимізував бізнес-процеси під масштабування.</li>
+                  <li>Працював із P&amp;L, маржинальністю, запасами й грошовими потоками.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="outcomes" aria-label="Напрями комерційної трансформації">
+              <span class="outcome">CRM і прогнозована воронка</span>
+              <span class="outcome">B2B, партнери та e-commerce</span>
+              <span class="outcome">Продажі, маркетинг, операції та фінанси</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap honesty" aria-labelledby="context-title">
+      <div class="intro-grid">
+      <div class="section-label">Масштаб відповідальності</div>
+        <div>
+          <h2 id="context-title">Комерційне рішення має працювати для всього бізнесу</h2>
+          <p>Поєдную зростання продажів із маржинальністю, запасами, операційними можливостями та грошовими потоками. Такий підхід дозволяє переходити від керівництва комерційною функцією до ширшої відповідальності за результат компанії.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="wrap closing" aria-labelledby="contact-title">
+      <div class="closing-grid">
+        <div class="section-label">Контакт</div>
+        <div>
+          <h2 id="contact-title">Готовий обговорити задачі комерційного розвитку</h2>
+          <p>На зустрічі можу детальніше розкрити побудову CRM і воронки, розвиток каналів, систему управління командою та логіку комерційних рішень у кожному кейсі.</p>
+          <div class="actions">
+            <a class="button primary" href="tel:+380672145565">Зателефонувати</a>
+            <a class="button" href="mailto:borodin837@gmail.com">Написати на пошту</a>
+            <a class="button" href="https://www.linkedin.com/in/borodincosulting/" target="_blank" rel="noopener">LinkedIn</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">Артем Бородін · Київ · комерційне та операційне управління · готовність до відряджень</div>
+  </footer>
+</body>
+</html>
